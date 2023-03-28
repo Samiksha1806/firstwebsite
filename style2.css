@@ -1,0 +1,207 @@
+*{
+    margin:0;
+    padding:0;
+    color:black;
+}
+html{
+font-size:62.5%;
+}
+.main{
+    height:100vh; 
+    width:100vw;
+    background: url("interior.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+}
+.navbar{
+    width:100vw;
+    background-color: gray;
+    height:7rem;
+    display:flex;
+}
+.logo h1{
+    padding-left:7rem; 
+    padding-top:2rem;
+    font-size:3rem;
+}
+.menu-item{
+    display:flex;
+    flex-direction: row;
+    padding-top:2rem;
+    padding-left:40rem;
+    font-size:2rem;
+}
+.menu-item li{
+list-style: none;
+padding-left:2.5rem;
+padding-right:2.5rem;
+}
+.menu-item li a{
+    text-decoration: none;
+}
+ .nav-icon{
+    padding-top:2rem;
+   font-size:3rem;
+   position:absolute;
+   right:2rem;
+   display:none;
+}
+.body{
+    height:50rem;
+    text-align:center;
+}
+.body h1{
+    font-size:10rem;
+    padding-top:15rem;
+}
+.body p{
+    font-size:2rem;
+}
+.buttons{
+    padding-top:2.5rem;
+}
+.btn{
+border-radius:3rem;
+background-color:rgb(243, 223, 113);
+border:none;
+font-size:3rem;
+padding-left:5rem;
+padding-right:5rem;
+padding-top:1rem;
+padding-bottom:1rem;
+margin:2rem;
+}
+/* ------------------media queries--------------- */
+@media screen and (max-width:1280px){
+    .nav-icon{
+    display:none;
+    }
+    .menu-item{
+        padding-left:40rem;
+    }
+    .menu-item li{
+    padding-left:2rem;
+    padding-right:2rem;
+    }
+    .body h1{
+        padding-top:20rem;
+    }
+    .body p{
+        font-size:2rem;
+    }
+}
+@media screen and (max-width:1024px) {
+    .menu-item{
+        padding-left:12rem;
+    }
+    .body h1{
+        padding-top:15rem;
+    }
+}
+@media screen and (max-width:912px){
+    .menu-item{
+        display:none;
+    }
+    .nav-icon{
+        display:block;
+    }
+    .body h1{
+        padding-top:25rem; 
+        font-size:14rem;
+   }
+   .body p{
+       font-size:2.5rem;
+       padding-left:1rem;
+       padding-right:1rem;
+   }
+}
+@media screen and (max-width:768px){
+    .logo h1{
+        padding-left:3rem; 
+        padding-top:2rem;
+    }
+    .menu-item{
+        display:none;
+    }
+    .nav-icon{
+        display:block;
+    }
+    .body h1{
+         padding-top:25rem; 
+         font-size:12rem;
+    }
+    .body p{
+        font-size:2.2rem;
+    }
+}
+@media screen and (max-width:640px){
+    .logo h1{
+        padding-left:3rem; 
+        padding-top:2rem;
+    }
+    .menu-item{
+        display:none;
+    }
+    .nav-icon{
+        display:block;
+    }
+    .body h1{
+         padding-top:15rem; 
+         font-size:8.5rem;
+    }
+    .body p{
+        font-size:2rem;
+        padding-top:1rem;
+        padding-bottom:1rem;
+        padding-left:2rem;
+        padding-right:2rem;
+    }
+    .buttons{
+        padding-top:0rem;
+    }
+    .btn{
+        margin:1rem;
+    }
+}
+@media screen and (max-width:375px){
+    .body h1{
+        padding-top:8.5rem; 
+        font-size:8rem;
+   }
+   .body p{
+       font-size:2rem;
+       padding-top:0.9rem;
+       padding-bottom:0.9rem;
+       padding-left:2rem;
+       padding-right:2rem;
+   }
+   .buttons{
+       padding-top:0rem;
+   }
+   .btn{
+       margin-left:1rem;
+       margin-right:1rem;
+       font-size:1.9rem;
+   }
+}
+
+@media screen and (max-width:280px){
+    .body h1{
+        padding-top:8.5rem; 
+        font-size:6.5rem;
+   }
+   .body p{
+        padding-top:0rem; 
+       padding-bottom:0rem;
+       padding-left:2rem;
+       padding-right:2rem;
+   }
+   .buttons{
+       padding-top:0rem;
+   }
+   .btn{
+       font-size:1.9rem;
+       margin-left:0.5rem;
+       margin-right:0.5rem;
+   }
+}
